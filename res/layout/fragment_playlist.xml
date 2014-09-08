@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbackground" >
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+    	android:layout_weight="0.5"
+    	android:layout_width="match_parent"
+    	android:paddingBottom="10dp">
+	    <TextView 
+	        android:id="@+id/playlistFragmentTitle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+			android:text="Current Playlist"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:gravity="center"
+	        android:textStyle="bold"/>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+    	android:layout_weight="4"
+    	android:layout_width="match_parent"
+    	android:paddingBottom="10dp">
+		<ListView
+	        android:id="@+id/playlistListView"
+	        android:layout_height="fill_parent"
+	        android:layout_width="match_parent"/>
+		<TextView
+		    android:text="Empty Playlist!"
+		    android:textColor="#ffffff"
+	        android:textSize="16dp"
+		    android:id="@+id/emptyCurrentPlaylistTextView"
+		    android:layout_height="fill_parent"
+	        android:layout_width="match_parent"
+		    android:gravity="center">
+		</TextView>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp">
+		<TextView 
+	        android:id="@+id/previousPlaylistFragmentTitle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+			android:text="Previously Played Playlist"
+	        android:textColor="#ffffff"
+	        android:textSize="20dp"
+	        android:gravity="center"
+	        android:textStyle="bold"/>
+	</LinearLayout>
+		
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+    	android:layout_weight="4"
+    	android:layout_width="match_parent"
+    	android:paddingBottom="10dp">
+		<ListView
+	        android:id="@+id/previousPlaylistListView"
+	        android:layout_height="fill_parent"
+	        android:layout_width="match_parent"/>
+		<TextView
+		    android:text="Empty Playlist!"
+		    android:textColor="#ffffff"
+	        android:textSize="16dp"
+		    android:id="@+id/emptyPreviouslyPlayedPlaylistTextView"
+		    android:layout_height="fill_parent"
+	        android:layout_width="match_parent"
+		    android:gravity="center">
+		</TextView>
+	</LinearLayout>
+	
+</LinearLayout>
